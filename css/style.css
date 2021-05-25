@@ -1,0 +1,486 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* general */
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+/* navbar */
+.container {
+  width: 100%;
+  margin: auto;
+  background-color: #1b1a17;
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 30px;
+}
+
+.container h2 {
+  color: #fff;
+}
+
+nav {
+  height: 50px;
+}
+
+nav h2 {
+  float: left;
+  display: inline-block;
+  line-height: 100px;
+  padding-left: 20px;
+}
+
+nav ul {
+  float: right;
+  line-height: 100px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  color: #1eae98;
+}
+
+/* showcase */
+.showcase {
+  height: calc(100vh - 100px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/intro-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.showcase h1 {
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.showcase p {
+  color: #fff;
+  margin: 50px 0;
+}
+
+.showcase-content {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 100px;
+}
+
+button {
+  background-color: #54e346;
+  padding: 10px 60px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+/* about us */
+.about {
+  display: flex;
+  padding: 30px 15px;
+  margin: 30px 48px;
+}
+
+.col1 {
+  width: 40%;
+  float: left;
+  padding: 19px;
+}
+
+.about .col1 .line {
+  width: 40px;
+  height: 3px;
+  margin-top: 10px;
+  background-color: #54e346;
+}
+
+.col2 {
+  width: 25%;
+  float: left;
+  padding: 12px;
+}
+
+.col2 h3 {
+  margin-top: 20px;
+}
+
+.col3 {
+  width: 25%;
+  float: left;
+  padding: 12px;
+}
+
+.col3 h3 {
+  margin-top: 20px;
+}
+
+.about::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+
+
+/* services */
+
+
+
+
+.services {
+  background-color: #54e346;
+  padding: 16px;
+  line-height: 1rem;
+  margin: 90px auto;
+}
+
+.services .title .line2 {
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  left: 49%;
+  margin-top: 16px;
+}
+
+.ser {
+  display: flex;
+  padding: 40px;
+  margin-bottom: 60px;
+}
+
+.title {
+  text-align: center;
+  padding: 40px 7px 7px;
+  color: #fff;
+  margin: 30px;
+}
+
+.title p {
+  margin: 20px;
+  color: #fff;
+}
+
+.ser {
+  text-align: center;
+  color: white;
+}
+
+.ser h3 {
+  margin: 20px 5px;
+}
+
+.ser-image {
+  border-radius: 100%;
+}
+
+
+/* testimonial */
+
+
+.testimonial {
+  height: 100%;
+  width: 100%;
+  background-color: #54e346;
+  opacity: 0.9;
+  padding: 10%;
+}
+
+.row1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.testimonial .row1 .line4 {
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  position: relative;
+  left: 47%;
+  margin-top: 12px;
+}
+
+.row1 p {
+  margin-top: 60px
+}
+
+hr {
+  border: dotted white 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 19px auto;
+}
+
+
+
+/* project gallery */
+
+
+
+.gallary {
+  text-align: center;
+  padding-top: 30px;
+  margin: 60px auto;
+}
+
+.g-h {
+  margin: 20px 5px;
+}
+
+.gallary .g-h .line3 {
+  width: 40px;
+  height: 2px;
+  position: relative;
+  background-color: #54e346;
+  left: 48%;
+  margin-top: 16px;
+}
+
+.g-h p {
+  margin: 20px 20px;
+}
+
+.g-b {
+  display: flex;
+  position: relative;
+  left: 410px;
+  margin: 30px auto;
+}
+
+.b1 {
+  margin: 10px;
+  background-color: #ededd0;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.b1:hover {
+  background-color: #54e346;
+}
+
+.g-pic {
+  display: flex;
+  margin: 10px 90px;
+}
+
+.pic-item {
+  width: 30%;
+  margin: 10px 20px;
+}
+
+
+/* CONTACT */
+
+
+.contact .row2 .line5 {
+  width: 40px;
+  height: 2px;
+  background-color: #54e346;
+  position: relative;
+  left: 48%;
+  margin-top: 12px;
+}
+
+.row2 {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.row2 p {
+  margin: 30px;
+}
+
+.row3 {
+  display: flex;
+  padding: 30px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.row3 .row-item .line5 {
+  width: 80px;
+  height: 2px;
+  background-color: #cdc7be;
+  position: relative;
+  left: 42%;
+  margin-bottom: 8px;
+}
+
+.row-item {
+  width: 33%;
+}
+
+.row4 {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.row4-item {
+  display: flex;
+  margin: 3px -5px;
+}
+
+.row4-item .detail {
+  margin: 20px;
+  margin: 2px;
+  padding: 4px;
+}
+
+.row-item h3 {
+  margin: 10px;
+}
+
+.row-item p {
+  line-height: 23px;
+}
+
+.query {
+  position: relative;
+  left: 20%;
+  margin: 30px;
+}
+
+.cont-btn button {
+  position: relative;
+  left: 20%;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+/* footer */
+
+
+
+
+.footer {
+  background-color: #1b1a17;
+}
+
+.icons {
+  display: flex;
+  padding: 40px;
+  margin-bottom: 60px;
+}
+
+.icon-1 {
+  padding: 8px;
+  width: 3%;
+  margin: 16px;
+  position: relative;
+  left: 43%;
+  border-radius: 100%;
+  background-color: #766161;
+  color: #54e346;
+}
+
+.icon-1:hover {
+  background-color: #4a503d;
+}
+
+.rights {
+  text-align: center;
+  padding-bottom: 50px;
+  color: #766161;
+}
+
+.rights p::before {
+  content: ' \00A9';
+}
